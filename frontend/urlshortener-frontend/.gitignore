@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Env files
+.env
+*.env
+*.env.*
+
+# Node
+node_modules/
+frontend/urlshortener-frontend/node_modules/
+frontend/urlshortener-frontend/dist/
+
+# Java/Maven
+backend/urlshortener/target/
+
+# Local overrides and dev-only config
+backend/urlshortener/src/main/resources/application-local.properties
+
+# Logs
+*.log
+logs/
+
+# Optional tooling
+.coverage
+coverage/
+.pnpm-store/
+
+# ecs
+task-definition.json
+task-definition.sample.json
+
+# vite
+vite.config.js

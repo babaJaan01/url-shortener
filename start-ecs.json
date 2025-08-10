@@ -1,0 +1,12 @@
+{
+  "Name": "urlshortener-start-ecs-daily",
+  "ScheduleExpression": "cron(0 12 * * ? *)",
+  "ScheduleExpressionTimezone": "America/Los_Angeles",
+  "State": "ENABLED",
+  "FlexibleTimeWindow": { "Mode": "OFF" },
+  "Target": {
+    "Arn": "arn:aws:scheduler:::aws-sdk:ecs:updateService",
+    "RoleArn": "arn:aws:iam::022499002705:role/urlshortener-scheduler-role",
+    "Input": "{\"cluster\":\"urlshortener-cluster\",\"service\":\"urlshortener-service\",\"desiredCount\":1}"
+  }
+}
