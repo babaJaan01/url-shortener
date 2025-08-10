@@ -2,7 +2,7 @@
 	Installed from https://reactbits.dev/tailwind/
 */
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 const vertexShader = `
 attribute vec2 uv;

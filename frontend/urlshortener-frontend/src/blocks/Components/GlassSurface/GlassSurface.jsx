@@ -2,7 +2,7 @@
 	Installed from https://reactbits.dev/tailwind/
 */
 
-import { useEffect, useRef, useState, useId } from "react";
+import React, { useEffect, useRef, useState, useId } from "react";
 
 const useDarkMode = () => {
   const [isDark, setIsDark] = useState(false);
