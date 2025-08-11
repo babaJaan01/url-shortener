@@ -107,7 +107,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-slate-400 font-medium break-all"
                 >
-                  {shortenedUrl}
+                  {shortenedUrl.replace(/^https?:\/\//, '')}
                 </a>
               </div>
             )}
