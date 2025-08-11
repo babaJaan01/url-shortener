@@ -5,8 +5,12 @@
   "installCommand": "npm install",
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "http://urlshortener-alb-471740086.us-west-1.elb.amazonaws.com/api/:path*"
+      "source": "/api/(.*)",
+      "destination": "http://urlshortener-alb-471740086.us-west-1.elb.amazonaws.com/api/$1"
+    },
+    {
+      "source": "/:shortCode",
+      "destination": "http://urlshortener-alb-471740086.us-west-1.elb.amazonaws.com/:shortCode"
     }
   ]
 }

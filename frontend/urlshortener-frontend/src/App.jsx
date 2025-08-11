@@ -32,7 +32,8 @@ function App() {
       }
 
       const shortened = (await response.text()).trim()
-      setShortenedUrl(shortened)
+      const finalUrl = `${window.location.origin}/${shortened}`
+      setShortenedUrl(finalUrl)
     } catch (err) {
       console.error('Shorten request failed:', err)
       alert('Failed to shorten URL. See console for details.')
