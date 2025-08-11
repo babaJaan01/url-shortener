@@ -29,6 +29,8 @@ backend/urlshortener/.mvn/wrapper/maven-wrapper.jar
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
+.env.development
 
 # Docker
 docker-compose.override.yml
@@ -43,3 +45,7 @@ logs/
 
 # AWS
 task-definition.json
+start-ecs.json
+stop-ecs.json
+start-rds.json
+stop-rds.json
