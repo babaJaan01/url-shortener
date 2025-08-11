@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import './App.css'
 import GlassSurface from './blocks/Components/GlassSurface/GlassSurface'
 import Galaxy from './blocks/Backgrounds/Galaxy/Galaxy'
+import React from 'react'
 function App() {
   const [url, setUrl] = useState('')
   const [shortenedUrl, setShortenedUrl] = useState('')
